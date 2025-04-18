@@ -32,7 +32,7 @@ jobs:
       run: gcloud container clusters get-credentials cluster-1 --region us-central1 --project sodium-coil-457018-p0
 
     - name: Install app 
-      run: helm install flask .   
+      run: helm install flask ./flask
 
 
 
