@@ -4,6 +4,16 @@ on:
   #push:
   #  branches: ["main"]
 
+  workflow_dispatch:
+   inputs: 
+     docker_image:
+       decription: 'Enter image name'
+       required: true 
+       default: ''
+     docker_tag:
+       decription: 'Enter image tag'
+       required: true 
+       default: ''
 
 jobs:
   setup-build-publish:
